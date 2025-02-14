@@ -1,13 +1,13 @@
 fastapi
 uvicorn
+pydantic
+pydantic[email]
 sqlalchemy
 alembic
 psycopg2-binary
-pydantic
-pydantic[email]
 passlib[bcrypt]
 python-jose
+pytest
 python-multipart
 python-dotenv
-pytest
 httpx
