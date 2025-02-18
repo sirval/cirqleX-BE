@@ -11,3 +11,5 @@ pytest
 python-multipart
 python-dotenv
 httpx
+email-validator
+jwt
