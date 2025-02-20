@@ -15,9 +15,7 @@ app.include_router(auth.router)
 
 @app.on_event("startup")
 async def startup():
-    # Using async context to interact with the engine
     async with engine.begin() as conn:
-        # Creating tables synchronously
         await conn.run_sync(Base.metadata.create_all)
 
 @app.on_event("shutdown")
